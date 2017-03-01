@@ -3,8 +3,14 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'php --version'
+                sh 'echo "Hello Team"'
+                sh '''
+                    echo "Multiline shell steps works too"
+                    ls -lah
+                '''
             }
         }
     }
 }
+
+
