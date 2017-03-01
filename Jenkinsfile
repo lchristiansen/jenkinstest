@@ -4,7 +4,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 timeout(time: 3, unit: 'MINUTES') {
-                    sh 'sleep 200'
+                    sh 'echo testing timeout'
                 }
             }
         }
